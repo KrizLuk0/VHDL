@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=0
+Time: 0 ps  Iteration: 1  Process: /tb/output_checker  File: C:/LFSR/sources/tb_lfsr.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb/tim_proc  File: C:/LFSR/sources/tb_lfsr.vhd
+$finish called at time : 400 ns : File "C:/LFSR/sources/tb_lfsr.vhd" Line 47
