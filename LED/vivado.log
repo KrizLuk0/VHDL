@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun May 11 13:00:44 2025
+# Process ID: 39576
+# Current directory: C:/LED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16876 C:\LED\LED.xpr
+# Log file: C:/LED/vivado.log
+# Journal file: C:/LED\vivado.jou
+# Running On: PC-Lukas, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 8126 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/LED/LED.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/LED/LED.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1400.648 ; gain = 178.410
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_led' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_led_behav -key {Behavioral:sim_1:Functional:tb_led} -tclbatch {tb_led.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_led.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_led_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for -all
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1455.609 ; gain = 38.477
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_led' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'led'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 0 ps  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 170 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 210 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=3
+Time: 270 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=3
+Time: 310 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 350 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 0 ps  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 170 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 210 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =3 expected y=5
+Time: 230 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=5
+Time: 270 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=5
+Time: 310 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 350 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 0 ps  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 170 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 210 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=3
+Time: 270 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=3
+Time: 310 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 350 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 170 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 210 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=3
+Time: 270 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=3
+Time: 310 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 350 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 10 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 70 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 110 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 130 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 190 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=3
+Time: 210 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=3
+Time: 230 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=3
+Time: 290 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=4
+Time: 310 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=4
+Time: 330 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=4
+Time: 350 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 370 ns  Iteration: 1  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=1
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 170 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=2
+Time: 210 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =2 expected y=3
+Time: 270 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=3
+Time: 310 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=4
+Time: 350 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 400 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.383 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_led_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/LED/sources/tb_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_led'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_led'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/LED/LED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/LED/LED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_led_behav xil_defaultlib.tb_led -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.led [led_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_led
+Built simulation snapshot tb_led_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=3
+Time: 150 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 200 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 200 ns : File "C:/LED/sources/tb_led.vhd" Line 59
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1487.031 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 11 13:14:21 2025...

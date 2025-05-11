@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Warning: Error!!! acutal =0 expected y=1
+Time: 50 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =1 expected y=2
+Time: 110 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Warning: Error!!! acutal =0 expected y=3
+Time: 150 ns  Iteration: 3  Process: /tb_led/output_checker  File: C:/LED/sources/tb_led.vhd
+Failure: Konec simulace
+Time: 200 ns  Iteration: 0  Process: /tb_led/stim_proc  File: C:/LED/sources/tb_led.vhd
+$finish called at time : 200 ns : File "C:/LED/sources/tb_led.vhd" Line 59
