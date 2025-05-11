@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Konec simulace
+Time: 400 ns  Iteration: 0  Process: /tb_gray/tim_proc  File: C:/GRAY/sources/tb_gray.vhd
+$finish called at time : 400 ns : File "C:/GRAY/sources/tb_gray.vhd" Line 51
